@@ -1,0 +1,174 @@
+/* Design tokens + the page around the phone (top bar, intro, checklist, phone frame). */
+:root {
+  /* palette taken from the reference screens: white page, cool grey screens, deep teal, navy ink, cream warnings */
+  --bg: #FFFFFF;
+  --bg-2: #F4F6F9;
+  --surface: #FFFFFF;
+  --surface-2: #EEF2F6;
+  --line: #E4E9F0;
+  --line-2: #CBD3DE;
+  --text: #121B2C;
+  --muted: #4F5B6E;
+  --faint: #6B7587;
+  --accent: #35746E;
+  --accent-ink: #FFFFFF;
+  --amber: #F0A126;
+  --amber-ink: #8A5410;
+  --danger: #C2413A;
+  --ok: #247A56;
+  --accent-rgb: 53 116 110;
+  --amber-rgb: 240 161 38;
+  --ok-rgb: 36 122 86;
+  --danger-rgb: 194 65 58;
+  --warn-bg: #FDF5E1;
+  --warn-line: #EBD28F;
+  --navy: #121B2C;
+  --display: 'Bricolage Grotesque', 'Hanken Grotesk', system-ui, sans-serif;
+  --body: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ar: 'Noto Kufi Arabic', 'Segoe UI', Tahoma, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 520px at 88% -8%, rgb(var(--accent-rgb) / 0.09), transparent 62%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: inherit; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- top bar ---------- */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap;
+  padding: 16px 28px; border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(10px);
+  position: sticky; top: 0; z-index: 20;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo {
+  width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center;
+  background: var(--accent); color: var(--accent-ink);
+  font: 700 17px/1.7 var(--ar); padding-top: 3px;
+}
+.brandtx { display: flex; flex-direction: column; line-height: 1.2; }
+.brandtx b { font: 700 20px var(--display); letter-spacing: -0.01em; }
+.brandtx small { color: var(--muted); font-size: 13.5px; }
+
+.toggle { display: inline-flex; padding: 4px; gap: 2px; border-radius: 999px; background: var(--bg-2); border: 1px solid var(--line-2); }
+.seg {
+  border: 0; background: transparent; color: var(--muted); cursor: pointer;
+  padding: 9px 18px; border-radius: 999px; font: 600 14.5px var(--body); transition: background .15s, color .15s;
+}
+.seg:hover { color: var(--text); }
+.seg[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
+
+.restart {
+  border: 1.5px solid var(--line-2); background: transparent; color: var(--text); cursor: pointer;
+  padding: 9px 16px; border-radius: 999px; font: 600 14.5px var(--body);
+}
+.restart:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---------- stage: intro + checklist on the left, phone on the right ---------- */
+.stage {
+  max-width: 1180px; margin: 0 auto; padding: 44px 28px 48px;
+  display: grid; column-gap: 64px; row-gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 460px);
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'intro phone' 'check phone';
+}
+.intro { grid-area: intro; }
+.check { grid-area: check; align-self: start; }
+.phonecol { grid-area: phone; position: sticky; top: 92px; align-self: start; }
+
+.tagchip {
+  display: inline-block; padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
+  border: 1px solid rgb(var(--accent-rgb) / 0.45); background: rgb(var(--accent-rgb) / 0.1);
+  color: var(--accent); font: 600 13px var(--body); letter-spacing: 0.02em;
+}
+.intro h1 {
+  margin: 0 0 18px; font: 700 clamp(34px, 4.6vw, 56px)/1.04 var(--display); letter-spacing: -0.025em; text-wrap: balance;
+}
+.lead { margin: 0 0 14px; max-width: 58ch; font-size: 18px; color: var(--muted); }
+.more { margin: 0 0 18px; max-width: 58ch; color: var(--muted); }
+.fine {
+  margin: 0; max-width: 58ch; padding-left: 14px; border-left: 2px solid var(--line-2);
+  color: var(--faint); font-size: 14.5px;
+}
+
+.check {
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 20px; padding: 22px 22px 18px; max-width: 620px;
+}
+.check-h { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.check-h h2 { margin: 0; font: 700 19px var(--display); }
+.count {
+  padding: 3px 12px; border-radius: 999px; background: rgb(var(--accent-rgb) / 0.14); color: var(--accent);
+  font: 700 13px var(--body);
+}
+.check .sub { margin: 4px 0 12px; color: var(--faint); font-size: 14px; }
+.check ol { list-style: none; margin: 0; padding: 0; }
+.ck { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line-2); color: var(--muted); font-size: 15px; }
+.tick {
+  flex: none; width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--line-2);
+  display: grid; place-items: center; color: var(--accent-ink); transition: background .2s, border-color .2s;
+}
+.ck.done { color: var(--text); }
+.ck.done .tick { background: var(--accent); border-color: var(--accent); }
+.alldone { margin: 12px 0 0; padding: 10px 14px; border-radius: 12px; background: rgba(99, 215, 154, 0.1); color: var(--ok); font-size: 14.5px; }
+
+/* ---------- phone frame ---------- */
+.who { display: flex; justify-content: center; margin-bottom: 14px; }
+.who span {
+  display: inline-block; max-width: 100%; padding: 7px 16px; border-radius: 999px; background: var(--surface);
+  border: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center;
+}
+.who b { color: var(--text); font-weight: 600; }
+
+.phone {
+  width: min(100%, 412px); margin: 0 auto; padding: 10px; border-radius: 50px; background: var(--navy);
+  height: clamp(640px, calc(100vh - 200px), 820px);
+  box-shadow: 0 30px 70px rgba(18, 27, 44, 0.22), 0 6px 18px rgba(18, 27, 44, 0.12);
+}
+.phone-in {
+  height: 100%; border-radius: 41px; overflow: hidden; background: var(--bg-2);
+  display: flex; flex-direction: column; isolation: isolate;
+}
+.sb {
+  flex: none; height: 36px; padding: 8px 24px 0; display: flex; justify-content: space-between; align-items: center; background: var(--surface);
+  font: 600 13.5px var(--body); color: var(--text);
+}
+.sb-role { color: var(--muted); font-weight: 500; }
+.app { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+
+.pagefoot { text-align: center; padding: 0 16px 40px; color: var(--faint); font-size: 13.5px; }
+
+/* ---------- smaller screens ---------- */
+@media (max-width: 1020px) {
+  .stage {
+    grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: 'intro' 'phone' 'check';
+    padding: 28px 16px 32px; row-gap: 32px;
+  }
+  .phonecol { position: static; }
+  .phone { height: clamp(640px, 88vh, 780px); }
+  .check { max-width: none; }
+  .topbar { padding: 12px 16px; position: static; }
+}
+@media (max-width: 560px) {
+  .brandtx small { display: none; }
+  .toggle { order: 3; width: 100%; }
+  .seg { flex: 1; padding-inline: 8px; }
+  .restart { margin-left: auto; }
+  .phone { padding: 8px; border-radius: 42px; }
+  .phone-in { border-radius: 34px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
