@@ -1,0 +1,201 @@
+text,label,lang
+My AC is running but not cooling at all,ac,en
+Water is dripping from the indoor unit of the air conditioner,ac,en
+The split unit makes a loud rattling noise,ac,en
+Air conditioner won't turn on after the power cut,ac,en
+Need a gas refill for my inverter AC,ac,en
+AC blows warm air even on the lowest temperature,ac,en
+Want to install a new 1.5 HP split air conditioner,ac,en
+The outdoor unit of the AC keeps tripping,ac,en
+Annual service and filter cleaning for two air conditioners,ac,en
+Remote shows error E4 on the Carrier AC,ac,en
+التكييف شغال بس مش بيبرد خالص,ac,ar
+التكييف بينقط مية من الوحدة الداخلية,ac,ar
+عايز اشحن فريون للتكييف,ac,ar
+التكييف بيطلع صوت عالي ومزعج,ac,ar
+التكييف مش راضي يشتغل,ac,ar
+محتاج حد يركب تكييف سبليت جديد,ac,ar
+التكييف بيطلع هوا سخن,ac,ar
+عايز صيانة وتنظيف فلاتر للتكييفين,ac,ar
+الوحدة الخارجية للتكييف بتفصل كل شوية,ac,ar
+التكييف الشباك ريحته وحشة لما بيشتغل,ac,ar
+The kitchen sink is leaking under the cabinet,plumbing,en
+Toilet keeps running and won't stop filling,plumbing,en
+Bathroom drain is completely blocked,plumbing,en
+Low water pressure in the shower,plumbing,en
+The tap in the bathroom is dripping all night,plumbing,en
+Water heater pipe burst and is flooding the floor,plumbing,en
+Need to replace the mixer in the kitchen,plumbing,en
+Sewage smell coming from the floor drain,plumbing,en
+Water is leaking from the ceiling below the bathroom,plumbing,en
+Install a new toilet seat and flush tank,plumbing,en
+الحوض في المطبخ بيسرب مية,plumbing,ar
+السيفون مش بيبطل يملى,plumbing,ar
+البلاعة في الحمام مسدودة,plumbing,ar
+ضغط المية ضعيف في الدش,plumbing,ar
+الحنفية بتنقط طول الليل,plumbing,ar
+ماسورة اتكسرت والمية مغرقة الأرض,plumbing,ar
+عايز اغير الخلاط بتاع المطبخ,plumbing,ar
+فيه ريحة مجاري طالعة من الصرف,plumbing,ar
+فيه رشح مية في السقف تحت الحمام,plumbing,ar
+عايز سباك يركب قاعدة حمام جديدة,plumbing,ar
+The breaker keeps tripping when I turn on the oven,electrical,en
+Half the sockets in the living room have no power,electrical,en
+A light switch sparks when I press it,electrical,en
+Need to install a new ceiling light and chandelier,electrical,en
+Burning smell from the electrical panel,electrical,en
+The doorbell stopped working after rewiring,electrical,en
+Need extra power outlets in the bedroom,electrical,en
+Lights flicker all the time in the hallway,electrical,en
+Need an earth wire and a new circuit breaker box,electrical,en
+The electricity meter trips every evening,electrical,en
+السكينة بتفصل لما بشغل الفرن,electrical,ar
+نص البرايز في الصالة مفيهاش كهربا,electrical,ar
+مفتاح النور بيطلع شرار,electrical,ar
+عايز اركب نجفة وكشافات في السقف,electrical,ar
+فيه ريحة حريق طالعة من لوحة الكهربا,electrical,ar
+الجرس بطل يشتغل,electrical,ar
+محتاج برايز زيادة في أوضة النوم,electrical,ar
+النور بيرعش طول الوقت في الطرقة,electrical,ar
+عايز كهربائي يركب لوحة قواطع جديدة,electrical,ar
+العداد بيفصل كل يوم بالليل,electrical,ar
+The washing machine won't drain the water,appliances,en
+Fridge is not cold and the freezer is defrosting,appliances,en
+Dishwasher leaves dishes dirty and smells,appliances,en
+Oven does not heat up anymore,appliances,en
+The dryer drum doesn't spin,appliances,en
+Microwave turns on but doesn't heat food,appliances,en
+Washing machine shakes violently during spin,appliances,en
+Refrigerator is making a buzzing noise,appliances,en
+The gas cooker burner won't light,appliances,en
+Water heater shows an error and gives no hot water,appliances,en
+الغسالة مش بتصرف المية,appliances,ar
+التلاجة مش بتبرد والفريزر بيسيح,appliances,ar
+غسالة الأطباق مش بتنضف كويس,appliances,ar
+الفرن مش بيسخن خالص,appliances,ar
+النشافة الدرام مش بيلف,appliances,ar
+الميكروويف شغال بس مش بيسخن الأكل,appliances,ar
+الغسالة بتتهز جامد وهي بتعصر,appliances,ar
+التلاجة بتطلع صوت زن,appliances,ar
+عين البوتاجاز مش بتولع,appliances,ar
+السخان مش بيطلع مية سخنة,appliances,ar
+The wardrobe door came off its hinge,carpentry,en
+Kitchen cabinet drawer is broken,carpentry,en
+Need to fix a squeaky wooden door that won't close,carpentry,en
+Assemble a new IKEA bed and wardrobe,carpentry,en
+The wooden floor boards are lifting,carpentry,en
+Need custom shelves built in the study,carpentry,en
+Bedroom door lock is jammed and the frame is cracked,carpentry,en
+Repair a wobbly dining table leg,carpentry,en
+Install a new wooden front door,carpentry,en
+Kitchen cupboards need new handles and hinges,carpentry,en
+ضلفة الدولاب وقعت من المفصلة,carpentry,ar
+درج المطبخ مكسور,carpentry,ar
+الباب الخشب بيزيق ومش بيقفل,carpentry,ar
+عايز نجار يركب سرير ودولاب جداد,carpentry,ar
+الباركيه بدأ يطلع لفوق,carpentry,ar
+عايز ارفف خشب في المكتب,carpentry,ar
+كالون باب الأوضة معلق والحلق مشروخ,carpentry,ar
+رجل الترابيزة بتتهز,carpentry,ar
+عايز اركب باب شقة خشب جديد,carpentry,ar
+دواليب المطبخ محتاجة مقابض ومفصلات جديدة,carpentry,ar
+Repaint the living room and the hallway,painting,en
+The walls have damp stains and the paint is peeling,painting,en
+Need a painter for a 3 bedroom apartment,painting,en
+Paint the balcony railings,painting,en
+Cracks in the wall need filling before painting,painting,en
+Want a new colour for the kids bedroom,painting,en
+Ceiling paint is flaking in the bathroom,painting,en
+Need wallpaper removed and walls painted,painting,en
+Touch up paint after moving the furniture,painting,en
+Waterproof paint for the roof,painting,en
+عايز ادهن الصالة والطرقة,painting,ar
+الحيطان فيها رطوبة والدهان بيقشر,painting,ar
+محتاج نقاش لشقة تلات أوض,painting,ar
+عايز ادهن سور البلكونة,painting,ar
+فيه شروخ في الحيطة محتاجة معجون قبل الدهان,painting,ar
+عايز لون جديد لأوضة الأولاد,painting,ar
+دهان السقف بيقع في الحمام,painting,ar
+عايز اشيل ورق الحايط وادهن,painting,ar
+محتاج تشطيب دهان بعد نقل العفش,painting,ar
+عايز دهان عازل للسطح,painting,ar
+Deep cleaning for the apartment before we move in,cleaning,en
+Need the carpets and sofa washed,cleaning,en
+Clean the kitchen after a renovation,cleaning,en
+Window and glass cleaning for a villa,cleaning,en
+Weekly house cleaning for a family,cleaning,en
+Clean the water tank on the roof,cleaning,en
+Post construction cleaning for the whole flat,cleaning,en
+Steam clean the mattresses,cleaning,en
+Clean the bathroom tiles and remove limescale,cleaning,en
+Office cleaning after working hours,cleaning,en
+عايز تنظيف شامل للشقة قبل ما نسكن,cleaning,ar
+محتاج غسيل سجاد وانتريه,cleaning,ar
+تنظيف المطبخ بعد التشطيب,cleaning,ar
+تنظيف شبابيك وزجاج فيلا,cleaning,ar
+عايز حد ينضف البيت كل أسبوع,cleaning,ar
+تنظيف خزان المية اللي فوق السطح,cleaning,ar
+تنظيف الشقة كلها بعد المعمار,cleaning,ar
+عايز تنظيف مراتب بالبخار,cleaning,ar
+تنظيف سيراميك الحمام وازالة الجير,cleaning,ar
+تنظيف مكتب بعد مواعيد الشغل,cleaning,ar
+Cockroaches in the kitchen,pest,en
+We have mice in the storage room,pest,en
+Bed bugs in the bedroom,pest,en
+Termites are eating the wooden door frame,pest,en
+Need spraying for mosquitoes in the garden,pest,en
+Ants everywhere in the kitchen,pest,en
+Pest control for the whole building,pest,en
+Rats in the garage,pest,en
+Fleas from the cat all over the house,pest,en
+Wasps nest on the balcony,pest,en
+فيه صراصير في المطبخ,pest,ar
+عندنا فيران في المخزن,pest,ar
+فيه بق في أوضة النوم,pest,ar
+النمل الأبيض بياكل حلق الباب,pest,ar
+عايز رش ناموس في الجنينة,pest,ar
+النمل مالي المطبخ,pest,ar
+عايز مكافحة حشرات للعمارة كلها,pest,ar
+فيه جرذان في الجراج,pest,ar
+براغيت من القطة في البيت كله,pest,ar
+فيه عش دبابير في البلكونة,pest,ar
+Moving furniture to a new apartment in New Cairo,moving,en
+Need a truck and two workers to move a fridge,moving,en
+Dismantle and move the bedroom set,moving,en
+Help moving boxes from the 5th floor without a lift,moving,en
+Move office furniture to another building,moving,en
+Need packing and moving for a 2 bedroom flat,moving,en
+Transport a piano carefully,moving,en
+Moving from Maadi to Sheikh Zayed next week,moving,en
+Lift the sofa through the balcony with a winch,moving,en
+Store furniture while we renovate,moving,en
+عايز انقل عفش لشقة جديدة في التجمع,moving,ar
+محتاج عربية نقل وعاملين ينقلوا تلاجة,moving,ar
+فك ونقل أوضة النوم,moving,ar
+نقل كراتين من الدور الخامس من غير أسانسير,moving,ar
+نقل عفش مكتب لمبنى تاني,moving,ar
+عايز تغليف ونقل لشقة أوضتين,moving,ar
+نقل بيانو بحرص,moving,ar
+هنعزل من المعادي للشيخ زايد الأسبوع الجاي,moving,ar
+تنزيل الكنبة من البلكونة بالونش,moving,ar
+عايز اخزن العفش لحد ما نشطب,moving,ar
+Hang curtains and a TV on the wall,general,en
+Mount shelves and mirrors in the hallway,general,en
+Several small fixes around the house,general,en
+Install a satellite dish,general,en
+Fix the balcony glass sliding window,general,en
+Replace broken bathroom tiles,general,en
+Install mosquito nets on the windows,general,en
+Seal the gaps around the windows with silicone,general,en
+Assemble and hang a ceiling fan bracket,general,en
+Handyman needed for a few odd jobs,general,en
+عايز اعلق ستاير وتلفزيون على الحيطة,general,ar
+تركيب رفوف ومرايات في الطرقة,general,ar
+شوية تصليحات صغيرة في البيت,general,ar
+تركيب طبق دش,general,ar
+تصليح شباك الألوميتال في البلكونة,general,ar
+تغيير سيراميك مكسور في الحمام,general,ar
+تركيب سلك للشبابيك ضد الناموس,general,ar
+سد الفتحات حوالين الشبابيك بالسيليكون,general,ar
+تعليق حامل مروحة سقف,general,ar
+محتاج صنايعي لكام شغلانة صغيرة,general,ar
