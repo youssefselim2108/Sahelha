@@ -28,6 +28,7 @@ from sklearn.svm import LinearSVC
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
 
 HERE = Path(__file__).parent
 OUT = HERE / "results"
@@ -79,7 +80,8 @@ def main():
     labels = sorted(y.unique())
     fig, ax = plt.subplots(figsize=(8, 7))
     ConfusionMatrixDisplay(confusion_matrix(y_te, pred, labels=labels), display_labels=labels).plot(
-        ax=ax, cmap="Greens", colorbar=False, xticks_rotation=45)
+        ax=ax, cmap=LinearSegmentedColormap.from_list("sahelha", ["#FFFFFF", "#1F7A72"]),  # deck accent colour
+        colorbar=False, xticks_rotation=45)
     ax.set_title(f"{best}: hold-out confusion matrix (n={len(y_te)})")
     fig.tight_layout()
     fig.savefig(OUT / "confusion_matrix.png", dpi=160)
