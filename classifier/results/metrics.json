@@ -1,0 +1,132 @@
+{
+  "dataset": {
+    "total": 200,
+    "train": 150,
+    "test": 50,
+    "classes": 10,
+    "per_class": 20,
+    "languages": {
+      "en": 100,
+      "ar": 100
+    }
+  },
+  "features": "TF-IDF char_wb n-grams (2-5)",
+  "best_model": "Linear SVM",
+  "models": {
+    "Majority baseline": {
+      "accuracy": 0.1,
+      "precision_macro": 0.01,
+      "recall_macro": 0.1,
+      "f1_macro": 0.018,
+      "accuracy_arabic": 0.111,
+      "accuracy_english": 0.087,
+      "cv5_f1_macro_mean": 0.018,
+      "cv5_f1_macro_std": 0.0
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.42,
+      "precision_macro": 0.387,
+      "recall_macro": 0.42,
+      "f1_macro": 0.4,
+      "accuracy_arabic": 0.444,
+      "accuracy_english": 0.391,
+      "cv5_f1_macro_mean": 0.417,
+      "cv5_f1_macro_std": 0.106
+    },
+    "Logistic Regression": {
+      "accuracy": 0.48,
+      "precision_macro": 0.474,
+      "recall_macro": 0.48,
+      "f1_macro": 0.463,
+      "accuracy_arabic": 0.519,
+      "accuracy_english": 0.435,
+      "cv5_f1_macro_mean": 0.517,
+      "cv5_f1_macro_std": 0.094
+    },
+    "Linear SVM": {
+      "accuracy": 0.48,
+      "precision_macro": 0.46,
+      "recall_macro": 0.48,
+      "f1_macro": 0.463,
+      "accuracy_arabic": 0.481,
+      "accuracy_english": 0.478,
+      "cv5_f1_macro_mean": 0.527,
+      "cv5_f1_macro_std": 0.075
+    }
+  },
+  "best_per_class": {
+    "ac": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8,
+      "f1-score": 0.7272727272727273,
+      "support": 5.0
+    },
+    "appliances": {
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1-score": 0.4,
+      "support": 5.0
+    },
+    "carpentry": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1-score": 0.6666666666666666,
+      "support": 5.0
+    },
+    "cleaning": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "electrical": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "general": {
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1-score": 0.4,
+      "support": 5.0
+    },
+    "moving": {
+      "precision": 0.25,
+      "recall": 0.2,
+      "f1-score": 0.2222222222222222,
+      "support": 5.0
+    },
+    "painting": {
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1-score": 0.8333333333333334,
+      "support": 5.0
+    },
+    "pest": {
+      "precision": 0.2857142857142857,
+      "recall": 0.4,
+      "f1-score": 0.3333333333333333,
+      "support": 5.0
+    },
+    "plumbing": {
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "f1-score": 0.25,
+      "support": 5.0
+    },
+    "accuracy": 0.48,
+    "macro avg": {
+      "precision": 0.45999999999999996,
+      "recall": 0.4800000000000001,
+      "f1-score": 0.46328282828282824,
+      "support": 50.0
+    },
+    "weighted avg": {
+      "precision": 0.46,
+      "recall": 0.48,
+      "f1-score": 0.4632828282828283,
+      "support": 50.0
+    }
+  }
+}
